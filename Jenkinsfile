@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'scp -o StrictHostKeyChecking=no target/Api-Investimentos-*.jar ubuntu@18.219.15.116:~/projects/api-investimentos/'
+        sh 'scp -o StrictHostKeyChecking=no target/Api-Investimentos-*.jar ubuntu@18.219.15.116:/home/ubuntu
       }
     }
   }
